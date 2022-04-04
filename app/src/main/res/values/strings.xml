@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="grade">grade</string>
+    <string name="mail">mail</string>
+    <string name="admin">Admin</string>
+    <string name="candidate">Candidate</string>
+    <string name="setting">Setting</string>
+    <string name="exam">Exam</string>
+    <string name="emai">email</string>
+    <string name="password">password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+
+    <string name="_1">1</string>
+    <string name="type_your_question">type your question</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="answer">Answer</string>
+    <string name="option_a">option a</string>
+    <string name="question">Question</string>
+    <string name="option_b">option b</string>
+    <string name="option_c">option c</string>
+    <string name="option_d">option d</string>
+    <string name="submit">Submit</string>
+    <string name="finish">Finish</string>
+</resources>

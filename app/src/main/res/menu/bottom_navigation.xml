@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="@string/home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item android:title="@string/search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        />
+    <item android:title="@string/grade"
+        android:id="@+id/grade"
+        android:icon="@drawable/ic_baseline_grade_24"
+        />
+
+    <item android:title="@string/mail"
+        android:id="@+id/mail"
+        android:icon="@drawable/ic_baseline_mail_24"
+        />
+
+</menu>

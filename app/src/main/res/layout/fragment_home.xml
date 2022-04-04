@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+  style="@style/Theme.Design.Light"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+    <com.google.android.material.circularreveal.CircularRevealGridLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:rowCount="2"
+        android:layout_marginTop="150dp"
+        android:columnCount="2"
+        android:id="@+id/grid"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:id="@+id/admin"
+            android:layout_column="0"
+            app:cardElevation="15dp"
+            android:layout_margin="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="16dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:background="@color/purple_200"
+                android:layout_gravity="center_horizontal"
+
+                android:src="@drawable/ic_baseline_admin_panel_settings_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/admin"
+                android:textSize="16sp"
+                android:layout_gravity="bottom|center"/>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:id="@+id/user"
+            android:layout_column="1"
+            app:cardElevation="15dp"
+            android:layout_margin="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="16dp"
+                app:civ_border_width="2dp"
+                android:background="@color/purple_200"
+                app:civ_border_color="#FF000000"
+                 android:layout_gravity="center_horizontal"
+               android:src="@drawable/ic_baseline_person_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/candidate"
+                android:textSize="16sp"
+                android:layout_gravity="bottom|center"/>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            app:cardElevation="15dp"
+            android:id="@+id/setting"
+            android:layout_margin="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="16dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:background="@color/purple_200"
+                android:layout_gravity="center_horizontal"
+
+                android:src="@drawable/ic_baseline_settings_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                android:textSize="16sp"
+                android:layout_gravity="bottom|center"/>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            app:cardElevation="15dp"
+            android:id="@+id/exam"
+            android:layout_margin="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="16dp"
+                app:civ_border_width="2dp"
+                android:background="@color/purple_200"
+                app:civ_border_color="#FF000000"
+
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_note_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exam"
+                android:textSize="16sp"
+                android:layout_gravity="bottom|center"/>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:layout_width="match_parent"
+       android:layout_marginTop="100dp"
+       android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+       app:menu="@menu/bottom_navigation"
+       android:id="@+id/bottomNav"/>
+
+
+
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "839148105099",
+    "firebase_url": "https://online-exam-c73fe-default-rtdb.firebaseio.com",
+    "project_id": "online-exam-c73fe",
+    "storage_bucket": "online-exam-c73fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839148105099:android:675405f85f28c492eb138e",
+        "android_client_info": {
+          "package_name": "com.example.exam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839148105099-9qmd2eao3be2nqum3gaip19952br8qot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdeJoIVptR7cs87w4p0ZysFadT_aysJok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839148105099-9qmd2eao3be2nqum3gaip19952br8qot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
