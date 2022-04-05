@@ -31,6 +31,6 @@ class MyViewHolder( var binding: CustomRecyclerBinding):RecyclerView.ViewHolder(
         binding.optionB.text=data.optionB.toString()
         binding.optionC.text=data.optionC.toString()
         binding.optionD.text=data.optionD.toString()
-        binding.answer.setText(data.answer.toString())
+      //  binding.answer.setText(data.answer.toString())
     }
 }

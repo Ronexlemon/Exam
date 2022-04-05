@@ -1,5 +1,7 @@
 package com.example.exam.ui
 
+
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.example.exam.ExamActivity
 import com.example.exam.R
 import com.example.exam.databinding.FragmentHomeBinding
 
@@ -39,6 +42,8 @@ class HomeFragment : Fragment() {
                 Toast.makeText(activity,"setting", LENGTH_SHORT).show()
             }
             exam.setOnClickListener {
+                val intent: Intent = Intent(activity, ExamActivity::class.java)
+                startActivity(intent)
                 Toast.makeText(activity,"exam", LENGTH_SHORT).show()
             }
         }

@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/shape.xml" value="0.104" />
+        <entry key="app/src/main/res/layout/activity_exam.xml" value="0.125" />
         <entry key="app/src/main/res/layout/custom_recycler.xml" value="0.1453125" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1453125" />

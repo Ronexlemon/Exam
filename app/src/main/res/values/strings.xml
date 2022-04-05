@@ -9,7 +9,7 @@
     <string name="admin">Admin</string>
     <string name="candidate">Candidate</string>
     <string name="setting">Setting</string>
-    <string name="exam">Exam</string>
+
     <string name="emai">email</string>
     <string name="password">password</string>
     <string name="confirm_password">Confirm Password</string>
@@ -28,6 +28,8 @@
     <string name="option_b">option b</string>
     <string name="option_c">option c</string>
     <string name="option_d">option d</string>
-    <string name="submit">Submit</string>
+
     <string name="finish">Finish</string>
+    <string name="exam">Exam</string>
+    <string name="submit">Submit</string>
 </resources>
