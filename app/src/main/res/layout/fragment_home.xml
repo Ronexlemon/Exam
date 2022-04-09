@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
   style="@style/Theme.Design.Light"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/home"
     tools:context=".ui.HomeFragment">
     <com.google.android.material.circularreveal.CircularRevealGridLayout
         android:layout_width="match_parent"
@@ -20,6 +22,7 @@
             android:layout_height="200dp"
             android:layout_row="0"
             android:id="@+id/admin"
+            android:backgroundTint="@color/card"
             android:layout_column="0"
             app:cardElevation="15dp"
             android:layout_margin="5dp">
@@ -45,6 +48,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_row="0"
+            android:backgroundTint="@color/card"
             android:id="@+id/user"
             android:layout_column="1"
             app:cardElevation="15dp"
@@ -69,6 +73,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_row="1"
+            android:backgroundTint="@color/card"
             android:layout_column="0"
             app:cardElevation="15dp"
             android:id="@+id/setting"
@@ -94,6 +99,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_row="1"
+            android:backgroundTint="@color/card"
             android:layout_column="1"
             app:cardElevation="15dp"
             android:id="@+id/exam"

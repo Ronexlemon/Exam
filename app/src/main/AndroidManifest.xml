@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exam">
         <activity
+            android:name=".ui.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Gradectivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".ExamActivity"
             android:exported="false" />
         <activity

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_nav"
+    app:startDestination="@id/userFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.exam.UserFragment"
+        android:label="UserFragment" >
+        <action
+            android:id="@+id/action_userFragment_to_userSignUpFragment"
+            app:destination="@id/userSignUpFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSignUpFragment"
+        android:name="com.example.exam.UserSignUpFragment"
+        android:label="UserSignUpFragment" >
+        <action
+            android:id="@+id/action_userSignUpFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.exam.ui.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>

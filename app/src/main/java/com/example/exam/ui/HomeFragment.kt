@@ -15,6 +15,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.exam.ExamActivity
 import com.example.exam.R
+import com.example.exam.UserLoginActivity
 import com.example.exam.databinding.FragmentHomeBinding
 
 
@@ -36,13 +37,18 @@ class HomeFragment : Fragment() {
                 view?.findNavController()?.navigate(HomeFragmentDirections.actionHomeFragmentToLoginFragment())
             }
             user.setOnClickListener {
+                val intent = Intent(activity,UserLoginActivity::class.java)
+                startActivity(intent)
                 Toast.makeText(activity,"candidate", LENGTH_SHORT).show()
             }
             setting.setOnClickListener {
+                val intent = Intent(activity,SettingActivity::class.java)
+                startActivity(intent)
                 Toast.makeText(activity,"setting", LENGTH_SHORT).show()
             }
             exam.setOnClickListener {
                 val intent: Intent = Intent(activity, ExamActivity::class.java)
+
                 startActivity(intent)
                 Toast.makeText(activity,"exam", LENGTH_SHORT).show()
             }
@@ -57,8 +63,14 @@ class HomeFragment : Fragment() {
         binding.bottomNav.setOnItemReselectedListener {
             when(it.itemId){
                 R.id.home ->{Toast.makeText(activity,"home", LENGTH_SHORT).show()}
-                R.id.search ->{Toast.makeText(activity,"search", LENGTH_SHORT).show()}
-                R.id.grade ->{Toast.makeText(activity,"grade", LENGTH_SHORT).show()}
+                R.id.search ->{
+                    val intent = Intent(activity,SearchActivity::class.java)
+                    startActivity(intent)
+                    Toast.makeText(activity,"search", LENGTH_SHORT).show()}
+                R.id.grade ->{
+                    val intent = Intent(activity,Gradectivity::class.java)
+                    startActivity(intent)
+                    Toast.makeText(activity,"grade", LENGTH_SHORT).show()}
                 R.id.mail ->{Toast.makeText(activity,"mail", LENGTH_SHORT).show()}
             }
 

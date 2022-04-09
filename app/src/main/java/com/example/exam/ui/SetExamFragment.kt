@@ -47,7 +47,7 @@ class SetExamFragment : Fragment() {
         binding.myView= viewmodel
         binding.submit.setOnClickListener {
             val add1= viewmodel.submit()
-           val  add = binding.quiz.text.toString()
+           val  add = binding.code.text.toString()
             setData(add,add1)
         }
 

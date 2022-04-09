@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setting_nav"
+    app:startDestination="@id/settingFragment">
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.exam.ui.SettingFragment"
+        android:label="SettingFragment" >
+        <action
+            android:id="@+id/action_settingFragment_to_deleteFragment"
+            app:destination="@id/deleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteFragment"
+        android:name="com.example.exam.ui.DeleteFragment"
+        android:label="DeleteFragment" >
+        <action
+            android:id="@+id/action_deleteFragment_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment3"
+        android:name="com.example.exam.ui.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>

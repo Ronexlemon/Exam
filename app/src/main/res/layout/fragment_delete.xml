@@ -5,9 +5,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:background="@drawable/admin"
         android:orientation="vertical"
-        tools:context=".ui.LoginFragment">
+        android:background="@drawable/back"
+        tools:context=".ui.DeleteFragment">
 
         <!-- TODO: Update blank fragment layout -->
         <com.google.android.material.card.MaterialCardView
@@ -66,25 +66,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/home"
                 android:backgroundTint="@color/grey"
-                 android:src="@drawable/ic_baseline_arrow_back_ios_24"
-                android:layout_margin="20dp"
-                android:id="@+id/login"
+                android:background="@drawable/shape"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="36dp"
+                android:id="@+id/home"
                 />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/signup"
+                android:text="@string/delete"
                 android:background="@drawable/shape"
                 android:layout_marginTop="20dp"
-
-                android:layout_marginStart="150dp"
-                android:id="@+id/sign"
+                android:layout_marginStart="120dp"
+                android:id="@+id/delete"
                 />
         </LinearLayout>
     </LinearLayout>

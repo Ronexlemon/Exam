@@ -3,15 +3,14 @@ package com.example.exam.ui.model
 import android.util.Log
 import androidx.databinding.Bindable
 import androidx.databinding.Observable
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.exam.Data.MyData
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.example.exam.ui.Answer
+import java.util.ArrayList
 
 class MyViewModel: ViewModel(),Observable{
+
 var count=1
     @Bindable
     val question = MutableLiveData<String>()
@@ -27,6 +26,31 @@ var count=1
     val answer = MutableLiveData<String>()
     @Bindable
     val questionNumber= MutableLiveData<String>()
+    @Bindable
+    val answerEdit =  MutableLiveData<String>()
+    val arrayEdit = listOf<Answer>()
+    var arraysAll: MutableList<Answer> = ArrayList()
+
+    fun submitEdit():MutableList<Answer>{
+        try{
+            Answer("A")
+            val ans = answerEdit.value!!
+
+            val data = Answer(ans)
+
+            arraysAll.add(data)
+            return arraysAll
+        }
+        catch (E:NullPointerException){
+            Log.i("TAAG",answerEdit.value.toString())
+        }
+
+
+        return arraysAll
+
+
+
+    }
 
     fun submit():MyData{
         val answer= answer.value!!
