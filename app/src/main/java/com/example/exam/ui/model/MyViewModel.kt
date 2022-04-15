@@ -6,10 +6,13 @@ import androidx.databinding.Observable
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.exam.Data.MyData
+import com.example.exam.recycler.RecyclerAdapter
+import com.example.exam.recycler.SampleAdapter
 import com.example.exam.ui.Answer
 import java.util.ArrayList
 
 class MyViewModel: ViewModel(),Observable{
+val samp = SampleAdapter
 
 var count=1
     @Bindable
@@ -30,6 +33,7 @@ var count=1
     val answerEdit =  MutableLiveData<String>()
     val arrayEdit = listOf<Answer>()
     var arraysAll: MutableList<Answer> = ArrayList()
+    var arrt =RecyclerAdapter.mEditTextValues
 
     fun submitEdit():MutableList<Answer>{
         try{

@@ -36,4 +36,5 @@
     <string name="delete">DELETE</string>
     <string name="code_i_e_23456">Code i.e 23456</string>
     <string name="search_r">SEARCH</string>
+    <string name="confirm1">Confirm</string>
 </resources>

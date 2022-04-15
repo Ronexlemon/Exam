@@ -42,6 +42,7 @@ class ExamActivity : AppCompatActivity() {
 
             viewmodel.submitEdit()
             binding.confirm.visibility= View.VISIBLE
+            binding.sub.visibility=View.GONE
 
             //viewmodel.submitEdit()
 
@@ -61,28 +62,26 @@ class ExamActivity : AppCompatActivity() {
 
                         val c = values.child("answer").value.toString().uppercase()
                         Log.i("TAAAG",viewmodel.arraysAll.toString())
-                        Toast.makeText(this@ExamActivity,viewmodel.arraysAll.toString(),Toast.LENGTH_SHORT).show()
-                        when (c) {
-                            "A" -> {
-                                count +=1
-                            }
-                            "B" -> {
-                                count +=1
-                            }
-                            "C" -> {
-                                count +=1
-                            }
-                            "D" -> {
-                                count +=1
-                            }
+
+                      //  Toast.makeText(this@ExamActivity,viewmodel.arrt.toString(),Toast.LENGTH_SHORT).show()
+                        for (answers in viewmodel.arrt){
+                            when (c) {
+                                answers -> {
+                                    count +=1
+                                }
+
+
+
+                        }
+
                         }
 
 
                         //Toast.makeText(this@ExamActivity,c,Toast.LENGTH_SHORT).show()
                     }
                     Toast.makeText(this@ExamActivity,count.toString(),Toast.LENGTH_SHORT).show()
+                viewmodel.arrt.clear()
                 }
-
                 }
 
 

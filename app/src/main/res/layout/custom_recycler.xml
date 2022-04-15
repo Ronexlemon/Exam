@@ -89,14 +89,25 @@
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 /></LinearLayout>
-
-            <EditText
-                android:id="@+id/answerEdi"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/answerEdi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-                android:layout_marginStart="100dp"
-                android:hint="@string/answer" />
+                    android:layout_marginStart="100dp"
+                    android:hint="@string/answer" />
+                <Button
+                    android:id="@+id/submitAnswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="@string/confirm1"
+                    /></LinearLayout>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
